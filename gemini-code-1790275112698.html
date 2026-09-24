@@ -1,0 +1,1488 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHUYÊN ĐỀ MẠO TỪ (ARTICLES) - 50 CÂU TỔNG HỢP - Ms Lê Hằng English</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Quicksand:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes floatPattern {
+            from { background-position: 0 0; }
+            to { background-position: 120px 240px; }
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            20%, 60% { transform: translateX(-8px); }
+            40%, 80% { transform: translateX(8px); }
+        }
+
+        body {
+            font-family: 'Quicksand', 'Nunito', sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(-45deg, #1E3A8A, #3B82F6, #06B6D4, #0284C7);
+            background-size: 400% 400%;
+            animation: gradientBG 12s ease infinite;
+            padding: 24px 12px;
+            position: relative;
+            color: #2D3748;
+            overflow-x: hidden;
+        }
+
+        .bg-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 100 100'%3E%3Cg fill='%23ffffff' fill-opacity='0.22'%3E%3Cpath d='M11 18l3 6 6 3-6 3-3 6-3-6-6-3 6-3z'/%3E%3Cpath d='M70 60l2 4 4 2-4 2-2 4-2-4-4-2 4-2z'/%3E%3Ccircle cx='40' cy='70' r='5'/%3E%3Ccircle cx='80' cy='20' r='6'/%3E%3Cpath d='M45 20c-3 0-5 2-5 5s2 5 5 5 5-2 5-5-2-5-5-5z'/%3E%3C/g%3E%3C/svg%3E");
+            animation: floatPattern 20s linear infinite;
+        }
+
+        .container {
+            max-width: 880px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 22px;
+        }
+
+        .teacher-badge {
+            display: inline-block;
+            background: #ffffff;
+            color: #1E3A8A;
+            font-size: 0.95rem;
+            font-weight: 800;
+            padding: 8px 24px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .main-title {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #ffffff;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            margin-bottom: 6px;
+        }
+
+        .warning-box {
+            background: #FFF3BF;
+            border: 3px dashed #FAB005;
+            border-radius: 20px;
+            padding: 18px 22px;
+            text-align: center;
+            margin-bottom: 28px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .warning-title {
+            color: #D9480F;
+            font-weight: 900;
+            font-size: 1.15rem;
+            margin-bottom: 8px;
+        }
+
+        .warning-text {
+            color: #495057;
+            font-size: 0.98rem;
+            font-weight: 700;
+            line-height: 1.6;
+        }
+
+        .warning-highlight {
+            color: #E67E22;
+            font-weight: 900;
+            margin-top: 6px;
+            display: block;
+            font-size: 1.05rem;
+        }
+
+        .question-card {
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 26px 30px;
+            margin-bottom: 26px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+            transition: transform 0.2s ease;
+        }
+
+        .question-card.shake {
+            animation: shake 0.4s ease-in-out;
+        }
+
+        .question-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 14px;
+        }
+
+        .question-number {
+            background: #3B82F6;
+            color: white;
+            font-weight: 900;
+            font-size: 1rem;
+            padding: 6px 16px;
+            border-radius: 14px;
+            margin-right: 12px;
+            box-shadow: 0 3px 0 #1D4ED8;
+            flex-shrink: 0;
+        }
+
+        .question-instruction {
+            font-weight: 800;
+            color: #4A5568;
+            font-size: 0.95rem;
+        }
+
+        .question-text {
+            font-size: 1.18rem;
+            font-weight: 800;
+            color: #2D3748;
+            line-height: 1.6;
+            margin-bottom: 18px;
+            white-space: pre-line;
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        .option-btn {
+            background-color: #F7FAFC;
+            border: 2px solid #E2E8F0;
+            border-radius: 18px;
+            padding: 14px 20px;
+            font-size: 1.05rem;
+            font-weight: 800;
+            color: #2D3748;
+            cursor: pointer;
+            box-shadow: 0 5px 0 #CBD5E0;
+            transition: all 0.15s ease;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            line-height: 1.4;
+        }
+
+        .option-btn:hover:not(:disabled) {
+            transform: translateY(-3px) scale(1.01);
+            box-shadow: 0 8px 0 #CBD5E0;
+            background-color: #EDF2F7;
+        }
+
+        .option-btn:active:not(:disabled) {
+            transform: translateY(2px);
+            box-shadow: 0 2px 0 #CBD5E0;
+        }
+
+        .option-btn.correct {
+            background-color: #00D26A !important;
+            color: white !important;
+            border-color: #00B85C !important;
+            box-shadow: 0 5px 0 #00994D !important;
+        }
+
+        .option-btn.wrong {
+            background-color: #FF4757 !important;
+            color: white !important;
+            border-color: #E03947 !important;
+            box-shadow: 0 5px 0 #C0392B !important;
+        }
+
+        .option-btn:disabled {
+            cursor: default;
+            opacity: 0.95;
+        }
+
+        .explanation-box {
+            display: none;
+            margin-top: 22px;
+            background: #EBF8FF;
+            border: 2px solid #63B3ED;
+            border-radius: 18px;
+            padding: 22px;
+            font-size: 0.98rem;
+            line-height: 1.65;
+        }
+
+        .explanation-title {
+            font-weight: 900;
+            color: #2B6CB0;
+            font-size: 1.1rem;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-bottom: 2px dashed #90CDF4;
+            padding-bottom: 8px;
+        }
+
+        .exp-section {
+            margin-bottom: 14px;
+        }
+
+        .exp-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .exp-section-title {
+            font-weight: 800;
+            color: #2D3748;
+            margin-bottom: 6px;
+            font-size: 1.02rem;
+        }
+
+        .options-breakdown-list {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 12px 16px;
+            margin: 6px 0;
+            border: 1px solid #CBD5E0;
+        }
+
+        .option-breakdown-item {
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #4A5568;
+            line-height: 1.5;
+        }
+
+        .option-breakdown-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .submit-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .submit-btn {
+            background: #3B82F6;
+            color: white;
+            font-size: 1.45rem;
+            font-weight: 900;
+            padding: 18px 54px;
+            border: none;
+            border-radius: 28px;
+            box-shadow: 0 8px 0 #1D4ED8;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            letter-spacing: 0.5px;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 0 #1D4ED8;
+            background: #60A5FA;
+        }
+
+        .submit-btn:active {
+            transform: translateY(2px);
+            box-shadow: 0 4px 0 #1D4ED8;
+        }
+
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.65);
+            z-index: 100;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 28px;
+            padding: 35px 28px;
+            max-width: 520px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+            position: relative;
+            animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        @keyframes popIn {
+            from { transform: scale(0.7); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        .modal-score {
+            font-size: 3.2rem;
+            font-weight: 900;
+            color: #3B82F6;
+            margin: 15px 0;
+        }
+
+        .modal-feedback {
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: #2D3748;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            background: #F7FAFC;
+            padding: 18px;
+            border-radius: 18px;
+            border: 2px solid #E2E8F0;
+        }
+
+        .modal-close-btn {
+            background: #3B82F6;
+            color: white;
+            font-weight: 900;
+            font-size: 1.15rem;
+            padding: 14px 36px;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 5px 0 #1D4ED8;
+            cursor: pointer;
+        }
+
+        #confetti-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 99;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-pattern"></div>
+    <canvas id="confetti-canvas"></canvas>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="teacher-badge">Giáo viên tạo: Ms Lê Hằng English</div>
+            <h1 class="main-title">CHUYÊN ĐỀ MẠO TỪ (ARTICLES) - 50 CÂU TỔNG HỢP</h1>
+        </header>
+
+        <!-- Warning Box -->
+        <div class="warning-box">
+            <div class="warning-title">⚠️ LỜI NHẮC CỰC KỲ QUAN TRỌNG ⚠️</div>
+            <div class="warning-text">
+                Chỉ có đọc kỹ giải thích ngay sau mỗi câu, sau đó ghi lại từ vựng và quy tắc mạo từ mới vào vở để học thì mới thực sự giỏi lên.<br>
+                Làm cho xong mà không đọc giải thích hay đọc qua loa không ghi chép thì chỉ tốn thời gian vô ích!
+                <span class="warning-highlight">* Kéo tới đâu, làm tới đó! *</span>
+            </div>
+        </div>
+
+        <!-- Quiz Container -->
+        <div id="quiz-container"></div>
+
+        <!-- Submit Button -->
+        <div class="submit-section">
+            <button class="submit-btn" onclick="submitQuiz()">🎉 NỘP BÀI THI 🎉</button>
+        </div>
+    </div>
+
+    <!-- Modal Score Popup -->
+    <div class="modal-overlay" id="scoreModal">
+        <div class="modal-content">
+            <h2 style="font-size:1.8rem; font-weight:900; color:#2D3748;">KẾT QUẢ BÀI THI</h2>
+            <div class="modal-score" id="scoreDisplay">0 / 50</div>
+            <div class="modal-feedback" id="feedbackDisplay"></div>
+            <button class="modal-close-btn" onclick="closeModal()">Xem lại bài làm</button>
+        </div>
+    </div>
+
+    <script>
+        const rawQuizData = [
+            {
+                id: 1,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 1: [EMPIRE TEAM] _______ primary objective of _______ meeting is to discuss the new budget for the marketing department.",
+                options: ["The / the", "A / a", "The / Ø", "Ø / the"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Mục tiêu chính của cuộc họp là để thảo luận về ngân sách mới cho bộ phận tiếp thị.",
+                optionsBreakdown: [
+                    "A. The / the: Dùng 'The' cho danh từ được xác định bởi mệnh đề bổ nghĩa 'of...' và cuộc họp cụ thể.",
+                    "B. A / a: Mạo từ không xác định, không dùng cho đối tượng đã xác định rõ.",
+                    "C. The / Ø: Thiếu mạo từ xác định cho cuộc họp cụ thể.",
+                    "D. Ø / the: Thiếu mạo từ cho danh từ primary objective."
+                ],
+                whyCorrect: "'primary objective' được xác định rõ nhờ cụm 'of the meeting' đi sau nên dùng 'The'. 'meeting' là cuộc họp cả hai bên đều biết nên dùng 'the'.",
+                whyOthersWrong: "Các phương án B, C, D không phản ánh đúng tính chất xác định của cả hai danh từ trong ngữ cảnh này."
+            },
+            {
+                id: 2,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 2: [EMPIRE TEAM] He is _______ experienced architect who has designed _______ some of the most iconic buildings in the city.",
+                options: ["a / Ø", "an / Ø", "the / the", "an / the"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Ông ấy là một kiến trúc sư có kinh nghiệm, người đã thiết kế một số tòa nhà biểu tượng nhất trong thành phố.",
+                optionsBreakdown: [
+                    "A. a / Ø: 'experienced' bắt đầu bằng nguyên âm /ɪk/ nên không dùng 'a'.",
+                    "B. an / Ø: Dùng 'an' trước danh từ đếm được số ít bắt đầu bằng nguyên âm và Ø trước 'some of'.",
+                    "C. the / the: 'architect' lần đầu đề cập mang tính giới thiệu nghề nghiệp, không dùng 'the'.",
+                    "D. an / the: Trước 'some of' không dùng mạo từ 'the'."
+                ],
+                whyCorrect: "Chỉ nghề nghiệp lần đầu đề cập 'experienced architect' dùng 'an' (nguyên âm /e/). Trước cụm định lượng 'some of...' không dùng mạo từ (Ø).",
+                whyOthersWrong: "Phương án A dùng sai mạo từ 'a'; C và D sai quy tắc mạo từ đứng trước 'some of'."
+            },
+            {
+                id: 3,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 3: [EMPIRE TEAM] We are planning to visit _______ Lake Superior during our trip to _______ United States next month.",
+                options: ["Ø / the", "the / the", "a / Ø", "the / Ø"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Chúng tôi đang lên kế hoạch ghé thăm Hồ Superior trong chuyến đi đến Hợp chúng quốc Hoa Kỳ vào tháng tới.",
+                optionsBreakdown: [
+                    "A. Ø / the: Tên hồ nước đơn lẻ không dùng mạo từ; tên quốc gia có dạng số nhiều/hợp chủng quốc dùng 'the'.",
+                    "B. the / the: Sai vì tên hồ đơn lẻ (Lake Superior) không dùng 'the'.",
+                    "C. a / Ø: Tên địa danh địa lý riêng không dùng mạo từ 'a'.",
+                    "D. the / Ø: Đảo ngược quy tắc mạo từ của hồ và tên nước United States."
+                ],
+                whyCorrect: "Tên hồ nước đi kèm từ 'Lake' (Lake Superior) không dùng mạo từ (Ø). Tên nước chứa 'United' (United States) bắt buộc phải dùng 'the'.",
+                whyOthersWrong: "Phương án B, C, D vi phạm quy tắc mạo từ đối với tên địa danh địa lý."
+            },
+            {
+                id: 4,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 4: [EMPIRE TEAM] _______ success of the product launch depends on _______ effective communication between all team members.",
+                options: ["The / Ø", "A / the", "The / the", "Ø / a"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Sự thành công của đợt ra mắt sản phẩm phụ thuộc vào sự giao tiếp hiệu quả giữa tất cả các thành viên trong đội.",
+                optionsBreakdown: [
+                    "A. The / Ø: Dùng 'The' cho danh từ có 'of' xác định và Ø cho danh từ trừu tượng không đếm được.",
+                    "B. A / the: 'success' ở đây đã xác định rõ nên không dùng 'A'.",
+                    "C. The / the: 'effective communication' là danh từ trừu tượng nói chung nên không dùng 'the'.",
+                    "D. Ø / a: 'communication' không đếm được nên không dùng 'a'."
+                ],
+                whyCorrect: "'success' được xác định bởi cụm 'of the product launch' nên dùng 'The'. 'effective communication' là danh từ trừu tượng không đếm được mang nghĩa chung nên dùng Ø.",
+                whyOthersWrong: "B, C, D dùng sai mạo từ cho danh từ xác định hoặc danh từ không đếm được."
+            },
+            {
+                id: 5,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 5: [EMPIRE TEAM] She has _______ passion for _______ music and spends most of her free time playing the piano.",
+                options: ["a / Ø", "the / the", "a / the", "Ø / Ø"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Cô ấy có niềm đam mê đối với âm nhạc và dành phần lớn thời gian rảnh để chơi đàn piano.",
+                optionsBreakdown: [
+                    "A. a / Ø: Cụm từ cố định 'have a passion for' và âm nhạc nói chung dùng Ø.",
+                    "B. the / the: Không dùng 'the' trước danh từ âm nhạc chỉ chung.",
+                    "C. a / the: Music là danh từ chung không xác định nên không dùng 'the'.",
+                    "D. Ø / Ø: Thiếu mạo từ 'a' trong cụm 'have a passion for'."
+                ],
+                whyCorrect: "Cấu trúc cố định là 'have a passion for something'. Danh từ 'music' chỉ dòng nhạc/âm nhạc nói chung nên không dùng mạo từ (Ø).",
+                whyOthersWrong: "Phương án B, C, D sai cấu trúc cố định hoặc thừa mạo từ trước danh từ chỉ chung."
+            },
+            {
+                id: 6,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 6: [EMPIRE TEAM] _______ technology has made it easier for _______ people to stay connected regardless of distance.",
+                options: ["The / Ø", "Ø / Ø", "A / the", "The / the"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Công nghệ đã giúp con người dễ dàng giữ liên lạc với nhau hơn mà không phụ thuộc vào khoảng cách.",
+                optionsBreakdown: [
+                    "A. The / Ø: 'Technology' nói chung không dùng 'The'.",
+                    "B. Ø / Ø: Cả hai danh từ đều chỉ khái niệm/đối tượng chung nên không dùng mạo từ.",
+                    "C. A / the: 'Technology' khái niệm chung không dùng 'A'.",
+                    "D. The / the: Cả hai danh từ đều không mang tính xác định riêng biệt."
+                ],
+                whyCorrect: "Danh từ không đếm được 'technology' và danh từ số nhiều 'people' khi nói về bản chất chung toàn xã hội thì đều dùng mạo từ rỗng (Ø / Ø).",
+                whyOthersWrong: "Các đáp án A, C, D dùng thừa mạo từ cho các khái niệm chung."
+            },
+            {
+                id: 7,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 7: [EMPIRE TEAM] It is _______ great honor to be nominated for _______ prestigious award like the Nobel Prize.",
+                options: ["a / the", "an / the", "a / a", "an / a"],
+                correctIndex: 2,
+                translation: "Dịch nghĩa toàn câu: Thật là một vinh dự lớn khi được đề cử cho một giải thưởng danh giá như giải Nobel.",
+                optionsBreakdown: [
+                    "A. a / the: 'award' chưa xác định nên không dùng 'the'.",
+                    "B. an / the: 'great' bắt đầu bằng phụ âm /ɡ/ nên không dùng 'an'.",
+                    "C. a / a: Cả hai danh từ đếm được số ít đều được nhắc đến lần đầu mang nghĩa bất kỳ.",
+                    "D. an / a: 'great' bắt đầu bằng phụ âm nên sai 'an'."
+                ],
+                whyCorrect: "'great honor' bắt đầu bằng phụ âm /ɡ/ dùng 'a'. 'prestigious award' là danh từ đếm được số ít nhắc lần đầu, bắt đầu bằng phụ âm /p/ dùng 'a'.",
+                whyOthersWrong: "Phương án A, B, D chọn sai mạo từ không xác định an/a hoặc dùng sai mạo từ 'the'."
+            },
+            {
+                id: 8,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 8: [EMPIRE TEAM] Many students find _______ chemistry to be _______ difficult subject to master in high school.",
+                options: ["Ø / a", "the / the", "a / a", "the / Ø"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Nhiều học sinh thấy môn hóa học là một môn học khó để làm chủ ở trường trung học phổ thông.",
+                optionsBreakdown: [
+                    "A. Ø / a: Môn học không dùng mạo từ; danh từ đếm được số ít nhắc lần đầu dùng 'a'.",
+                    "B. the / the: Môn học không dùng 'the'.",
+                    "C. a / a: Môn học 'chemistry' không dùng mạo từ 'a'.",
+                    "D. the / Ø: Môn học dùng 'the' là sai ngữ pháp."
+                ],
+                whyCorrect: "Tên môn học (chemistry) không dùng mạo từ (Ø). 'difficult subject' là danh từ đếm được số ít nhắc đến lần đầu, tính từ bắt đầu bằng phụ âm /d/ dùng 'a'.",
+                whyOthersWrong: "Các phương án B, C, D vi phạm quy tắc mạo từ đứng trước tên môn học."
+            },
+            {
+                id: 9,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 9: [EMPIRE TEAM] _______ Amazon River is one of _______ rivers in South America.",
+                options: ["Ø / the", "The / the", "A / the", "The / a"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Sông Amazon là một trong những con sông lớn ở Nam Mỹ.",
+                optionsBreakdown: [
+                    "A. Ø / the: Tên sông bắt buộc phải có 'The'.",
+                    "B. The / the: Dùng 'The' trước tên sông và 'the' trong cấu trúc 'one of the + N-số nhiều'.",
+                    "C. A / the: Tên sông riêng cụ thể không dùng 'A'.",
+                    "D. The / a: Cấu trúc 'one of the' không dùng 'one of a'."
+                ],
+                whyCorrect: "Tên sông (Amazon River) bắt buộc dùng 'The'. Cấu trúc so sánh/định lượng tập hợp luôn là 'one of the + danh từ số nhiều'.",
+                whyOthersWrong: "A, C, D bỏ sót mạo từ 'The' trước tên sông hoặc sai cấu trúc 'one of the'."
+            },
+            {
+                id: 10,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 10: [EMPIRE TEAM] He decided to take _______ taxi to _______ airport to avoid missing his international flight.",
+                options: ["a / the", "the / a", "a / a", "the / the"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Anh ấy quyết định bắt một chiếc taxi đến sân bay để tránh bị lỡ chuyến bay quốc tế.",
+                optionsBreakdown: [
+                    "A. a / the: Dùng 'a' cho phương tiện taxi bất kỳ và 'the' cho sân bay xác định của thành phố.",
+                    "B. the / a: Taxi chưa xác định nên không dùng 'the'; airport địa điểm cụ thể nên dùng 'the'.",
+                    "C. a / a: Sân bay phục vụ chuyến bay của anh ấy là địa điểm xác định, không dùng 'a'.",
+                    "D. the / the: Chiếc taxi là một chiếc bất kỳ bắt trên đường nên không dùng 'the'."
+                ],
+                whyCorrect: "'take a taxi' chỉ việc đi bằng một chiếc taxi bất kỳ. 'to the airport' chỉ sân bay cụ thể nơi chuyến bay cất cánh.",
+                whyOthersWrong: "B, C, D dùng sai tính chất xác định/không xác định của taxi và sân bay."
+            },
+            {
+                id: 11,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 11: [EMPIRE TEAM] _______ honesty and _______ hard work are the two most important values in his family.",
+                options: ["The / the", "Ø / Ø", "A / a", "The / Ø"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Sự trung thực và sự chăm chỉ là hai giá trị quan trọng nhất trong gia đình anh ấy.",
+                optionsBreakdown: [
+                    "A. The / the: Cả hai danh từ trừu tượng chung không dùng 'The'.",
+                    "B. Ø / Ø: Danh từ trừu tượng không đếm được chỉ phẩm chất nói chung không dùng mạo từ.",
+                    "C. A / a: Danh từ không đếm được không đi với 'A/an'.",
+                    "D. The / Ø: Thiếu sự đồng nhất mạo từ cho hai phẩm chất trừu tượng."
+                ],
+                whyCorrect: "Hai danh từ trừu tượng không đếm được 'honesty' (lòng trung thực) và 'hard work' (sự chăm chỉ) khi nói chung không dùng mạo từ (Ø / Ø).",
+                whyOthersWrong: "Các phương án A, C, D dùng thừa mạo từ cho danh từ trừu tượng không đếm được."
+            },
+            {
+                id: 12,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 12: [EMPIRE TEAM] She is _______ only student in the class who can speak _______ Spanish fluently.",
+                options: ["a / Ø", "an / the", "the / Ø", "the / the"],
+                correctIndex: 2,
+                translation: "Dịch nghĩa toàn câu: Cô ấy là học sinh duy nhất trong lớp có thể nói tiếng Tây Ban Nha một cách lưu khoát.",
+                optionsBreakdown: [
+                    "A. a / Ø: Đứng trước từ 'only' bắt buộc dùng 'the'.",
+                    "B. an / the: 'only' bắt buộc đi với 'the', ngôn ngữ không dùng 'the'.",
+                    "C. the / Ø: Dùng 'the' trước 'only student' và Ø trước tên ngôn ngữ.",
+                    "D. the / the: Tên ngôn ngữ (Spanish) không dùng mạo từ 'the'."
+                ],
+                whyCorrect: "Cụm 'the only + danh từ' dùng 'the' để chỉ sự duy nhất. Tên ngôn ngữ (Spanish) đứng sau động từ speak không dùng mạo từ (Ø).",
+                whyOthersWrong: "Phương án A, B, D sai quy tắc độc nhất 'the only' hoặc thừa mạo từ trước tên ngôn ngữ."
+            },
+            {
+                id: 13,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 13: [EMPIRE TEAM] _______ information you provided in the report was _______ extremely helpful for our research.",
+                options: ["Ø / Ø", "The / Ø", "The / an", "A / Ø"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Thông tin bạn cung cấp trong báo cáo cực kỳ hữu ích cho nghiên cứu của chúng tôi.",
+                optionsBreakdown: [
+                    "A. Ø / Ø: 'Information' đã được xác định bởi mệnh đề 'you provided' nên cần 'The'.",
+                    "B. The / Ø: Dùng 'The' cho danh từ được xác định và Ø trước tính từ 'helpful'.",
+                    "C. The / an: 'helpful' là tính từ đứng sau tobe, không phải cụm danh từ nên không dùng 'an'.",
+                    "D. A / Ø: 'Information' là danh từ không đếm được, không dùng 'A'."
+                ],
+                whyCorrect: "'information' được xác định bởi mệnh đề 'you provided in the report' nên dùng 'The'. Sau 'was' là trạng từ + tính từ (extremely helpful) không có danh từ theo sau nên dùng Ø.",
+                whyOthersWrong: "A, C, D dùng sai mạo từ cho danh từ không đếm được hoặc thêm mạo từ trước tính từ đứng cô đơn."
+            },
+            {
+                id: 14,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 14: [EMPIRE TEAM] They are staying at _______ hotel near _______ beach for their summer vacation this year.",
+                options: ["a / the", "the / a", "a / a", "the / the"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Họ đang ở tại một khách sạn gần bãi biển cho kỳ nghỉ hè của họ năm nay.",
+                optionsBreakdown: [
+                    "A. a / the: Khách sạn nhắc đến lần đầu (a hotel), bãi biển thuộc khu nghỉ mát xác định (the beach).",
+                    "B. the / a: Khách sạn chưa xác định không dùng 'the'.",
+                    "C. a / a: Bãi biển thuộc danh thắng địa phương mang tính xác định nên dùng 'the'.",
+                    "D. the / the: Cả hai đều dùng 'the' là chưa chuẩn vì khách sạn chưa được xác định từ trước."
+                ],
+                whyCorrect: "'a hotel' chỉ một khách sạn bất kỳ chưa xác định. 'the beach' chỉ bãi biển của khu vực nghỉ mát mà họ tới.",
+                whyOthersWrong: "B, C, D chưa phân biệt đúng tính xác định của từng địa danh."
+            },
+            {
+                id: 15,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 15: [EMPIRE TEAM] _______ happiness is not something that can be bought with _______ money.",
+                options: ["The / Ø", "Ø / the", "Ø / Ø", "The / the"],
+                correctIndex: 2,
+                translation: "Dịch nghĩa toàn câu: Hạnh phúc không phải là thứ có thể mua được bằng tiền.",
+                optionsBreakdown: [
+                    "A. The / Ø: 'Happiness' chỉ khái niệm chung không dùng 'The'.",
+                    "B. Ø / the: 'Money' chỉ tiền bạc nói chung không dùng 'the'.",
+                    "C. Ø / Ø: Cả hai danh từ trừu tượng/không đếm được chỉ khái niệm chung không dùng mạo từ.",
+                    "D. The / the: Cả hai đều là khái niệm triết lý chung, dùng 'The' là sai."
+                ],
+                whyCorrect: "Danh từ trừu tượng 'happiness' và danh từ không đếm được 'money' khi diễn đạt chân lý/khái niệm tổng quát đều không dùng mạo từ (Ø / Ø).",
+                whyOthersWrong: "A, B, D thừa mạo từ xác định cho các khái niệm chung."
+            },
+            {
+                id: 16,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 16: [EMPIRE TEAM] He was _______ first person to finish _______ exam in less than an hour.",
+                options: ["a / the", "the / the", "the / an", "a / an"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Anh ấy là người đầu tiên hoàn thành bài kiểm tra trong chưa đầy một giờ.",
+                optionsBreakdown: [
+                    "A. a / the: Số thứ tự 'first' bắt buộc đi với 'the'.",
+                    "B. the / the: Dùng 'the' trước số thứ tự và 'the' cho bài kiểm tra cụ thể.",
+                    "C. the / an: 'exam' bắt đầu bằng nguyên âm nhưng ở đây bài thi cụ thể nên dùng 'the'.",
+                    "D. a / an: 'first' không đi với mạo từ 'a'."
+                ],
+                whyCorrect: "Đứng trước số thứ tự (first) dùng 'the'. Bài kiểm tra (exam) mà anh ấy làm là bài thi cụ thể được nhắc tới nên dùng 'the'.",
+                whyOthersWrong: "A, C, D sai quy tắc số thứ tự hoặc tính xác định của kỳ thi."
+            },
+            {
+                id: 17,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 17: [EMPIRE TEAM] _______ Mount Fuji is _______ active volcano located on Honshu Island in Japan.",
+                options: ["Ø / an", "The / an", "A / the", "The / the"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Núi Phú Sĩ là một ngọn núi lửa đang hoạt động nằm trên đảo Honshu ở Nhật Bản.",
+                optionsBreakdown: [
+                    "A. Ø / an: Tên ngọn núi đơn lẻ không dùng mạo từ; danh từ đếm được bắt đầu bằng nguyên âm dùng 'an'.",
+                    "B. The / an: Ngọn núi đơn lẻ (Mount Fuji) không dùng 'The'.",
+                    "C. A / the: Tên riêng núi Phú Sĩ không dùng 'A'.",
+                    "D. The / the: Ngọn núi đơn lẻ không dùng 'The'."
+                ],
+                whyCorrect: "Tên ngọn núi đơn lẻ có từ 'Mount' (Mount Fuji) dùng Ø. 'active volcano' là danh từ đếm được số ít nhắc lần đầu, bắt đầu bằng nguyên âm /æ/ nên dùng 'an'.",
+                whyOthersWrong: "B, C, D vi phạm quy tắc tên núi đơn lẻ hoặc chọn sai mạo từ an/a."
+            },
+            {
+                id: 18,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 18: [EMPIRE TEAM] We went to _______ cinema last night to see _______ new documentary about space exploration.",
+                options: ["a / a", "the / a", "the / the", "a / the"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Tối qua chúng tôi đã đến rạp chiếu phim để xem một bộ phim tài liệu mới về khám phá vũ trụ.",
+                optionsBreakdown: [
+                    "A. a / a: Cụm từ giải trí 'go to the cinema' bắt buộc dùng 'the'.",
+                    "B. the / a: Dùng 'the' trong cụm 'to the cinema' và 'a' cho bộ phim tài liệu mới nhắc lần đầu.",
+                    "C. the / the: Phim tài liệu mới nhắc lần đầu chưa xác định nên không dùng 'the'.",
+                    "D. a / the: Dùng sai mạo từ ở cả hai khoảng trống."
+                ],
+                whyCorrect: "Cụm cố định chỉ địa điểm giải trí là 'go to the cinema'. 'new documentary' là danh từ đếm được số ít nhắc lần đầu, bắt đầu bằng phụ âm /n/ nên dùng 'a'.",
+                whyOthersWrong: "A, C, D không thuộc cụm từ cố định hoặc dùng sai mạo từ không xác định."
+            },
+            {
+                id: 19,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 19: [EMPIRE TEAM] _______ breakfast we had at the hotel was _______ delicious and filling.",
+                options: ["The / Ø", "A / a", "Ø / Ø", "The / a"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Bữa sáng chúng tôi ăn ở khách sạn rất ngon và no bụng.",
+                optionsBreakdown: [
+                    "A. The / Ø: Dùng 'The' vì bữa sáng có mệnh đề xác định 'we had at the hotel' và Ø trước tính từ.",
+                    "B. A / a: Bữa sáng cụ thể đã ăn không dùng 'A'.",
+                    "C. Ø / Ø: Bữa ăn đã được xác định cụ thể nên không thể dùng Ø ở vị trí đầu.",
+                    "D. The / a: Tính từ đứng sau tobe không dùng mạo từ 'a'."
+                ],
+                whyCorrect: "Bữa ăn (breakfast) bình thường không dùng mạo từ nhưng ở đây đã xác định rõ 'we had at the hotel' nên dùng 'The'. Sau 'was' là hai tính từ (delicious and filling) nên dùng Ø.",
+                whyOthersWrong: "B, C, D sai tính xác định của bữa ăn hoặc thêm mạo từ trước tính từ."
+            },
+            {
+                id: 20,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 20: [EMPIRE TEAM] He has _______ interest in _______ ancient history and loves visiting archaeological sites.",
+                options: ["an / Ø", "a / the", "the / the", "an / the"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Anh ấy có niềm yêu thích đối với lịch sử cổ đại và thích đi thăm các di tích khảo cổ.",
+                optionsBreakdown: [
+                    "A. an / Ø: Cụm 'have an interest in' và lĩnh vực lịch sử nói chung dùng Ø.",
+                    "B. a / the: 'interest' bắt đầu bằng nguyên âm /ɪ/ phải dùng 'an'.",
+                    "C. the / the: 'interest' nhắc lần đầu không dùng 'the'.",
+                    "D. an / the: 'ancient history' là môn học/lĩnh vực chung không dùng 'the'."
+                ],
+                whyCorrect: "Cụm 'have an interest in' dùng 'an' vì 'interest' bắt đầu bằng nguyên âm /ɪ/. 'ancient history' là lĩnh vực tri thức chung nên không dùng mạo từ (Ø).",
+                whyOthersWrong: "B, C, D sai dạng mạo từ an/a hoặc thừa mạo từ trước lĩnh vực lịch sử."
+            },
+            {
+                id: 21,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 21: [EMPIRE TEAM] The manager asked about _______ condition of _______ company's financial records.",
+                options: ["Ø / the", "The / the", "A / a", "The / Ø"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Người quản lý đã hỏi về tình trạng hồ sơ tài chính của công ty.",
+                optionsBreakdown: [
+                    "A. Ø / the: 'condition' được xác định bởi cụm 'of...' nên phải có 'The'.",
+                    "B. The / the: Cả hai danh từ đều mang tính xác định rõ ràng.",
+                    "C. A / a: Cả hai danh từ đều đã được xác định trong ngữ cảnh công ty.",
+                    "D. The / Ø: 'company's financial records' là đối tượng cụ thể của công ty nên cần 'the'."
+                ],
+                whyCorrect: "'condition' được xác định bởi cụm giới từ 'of the company's...' nên dùng 'The'. 'company' là công ty cụ thể nơi họ làm việc nên dùng 'the'.",
+                whyOthersWrong: "A, C, D thiếu mạo từ xác định cho đối tượng đã rõ ràng."
+            },
+            {
+                id: 22,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 22: [EMPIRE TEAM] She plays _______ violin in _______ local orchestra every Sunday afternoon.",
+                options: ["the / the", "a / a", "Ø / the", "the / a"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Cô ấy chơi đàn vi-ô-lông trong dàn nhạc địa phương vào mỗi chiều Chủ nhật.",
+                optionsBreakdown: [
+                    "A. the / the: Nhạc cụ đi với động từ 'play' dùng 'the'; dàn nhạc địa phương xác định dùng 'the'.",
+                    "B. a / a: Nhạc cụ biểu diễn không dùng mạo từ 'a'.",
+                    "C. Ø / the: Động từ play + nhạc cụ bắt buộc có 'the'.",
+                    "D. the / a: Dàn nhạc địa phương cụ thể trong vùng dùng 'the'."
+                ],
+                whyCorrect: "Quy tắc: Động từ 'play' + mạo từ 'the' + tên nhạc cụ (play the violin). Dàn nhạc địa phương (local orchestra) là tổ chức cụ thể nơi cô ấy tham gia nên dùng 'the'.",
+                whyOthersWrong: "B, C, D vi phạm quy tắc mạo từ đối với nhạc cụ chơi biểu diễn."
+            },
+            {
+                id: 23,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 23: [EMPIRE TEAM] _______ Sahara Desert is _______ largest hot desert in the world, covering vast areas of North Africa and influencing the climate of several neighboring countries.",
+                options: ["Ø / the", "The / the", "A / a", "The / a"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Sa mạc Sahara là sa mạc nóng lớn nhất trên thế giới, bao phủ các vùng diện tích rộng lớn ở Bắc Phi và ảnh hưởng đến khí hậu của nhiều quốc gia lân cận.",
+                optionsBreakdown: [
+                    "A. Ø / the: Tên sa mạc bắt buộc phải có mạo từ 'The'.",
+                    "B. The / the: Dùng 'The' trước tên sa mạc và 'the' trước tính từ so sánh nhất 'largest'.",
+                    "C. A / a: Sa mạc cụ thể không dùng 'A'; so sánh nhất không dùng 'a'.",
+                    "D. The / a: So sánh nhất 'largest' bắt buộc phải dùng 'the'."
+                ],
+                whyCorrect: "Tên các sa mạc (Sahara Desert) luôn đi với 'The'. Tính từ ở dạng so sánh nhất (largest) luôn đi với 'the'.",
+                whyOthersWrong: "A, C, D bỏ sót mạo từ 'The' trước tên sa mạc hoặc dùng sai mạo từ trong so sánh nhất."
+            },
+            {
+                id: 24,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 24: [EMPIRE TEAM] He works as _______ engineer for _______ multinational company based in Germany.",
+                options: ["an / a", "a / a", "the / the", "an / the"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Anh ấy làm việc với tư cách là một kỹ sư cho một công ty đa quốc gia có trụ sở tại Đức.",
+                optionsBreakdown: [
+                    "A. an / a: 'engineer' bắt đầu bằng nguyên âm /e/ dùng 'an'; 'multinational company' nhắc đến lần đầu dùng 'a'.",
+                    "B. a / a: 'engineer' bắt đầu bằng nguyên âm nên dùng 'a' là sai.",
+                    "C. the / the: Cả danh từ chỉ nghề nghiệp và công ty đều nhắc đến lần đầu mang tính giới thiệu chung.",
+                    "D. an / the: Công ty này chưa được xác định trước đó nên không dùng 'the'."
+                ],
+                whyCorrect: "Danh từ chỉ nghề nghiệp 'engineer' bắt đầu bằng nguyên âm /e/ dùng 'an'. Danh từ đếm được số ít 'multinational company' nhắc lần đầu, bắt đầu bằng phụ âm /m/ dùng 'a'.",
+                whyOthersWrong: "B, C, D sai dạng mạo từ an/a hoặc dùng sai mạo từ xác định 'the'."
+            },
+            {
+                id: 25,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 25: [EMPIRE TEAM] _______ patience is _______ essential quality for anyone working in the customer service industry.",
+                options: ["The / a", "Ø / an", "A / the", "Ø / a"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Kiên nhẫn là một phẩm chất thiết yếu đối với bất kỳ ai làm việc trong ngành dịch vụ khách hàng.",
+                optionsBreakdown: [
+                    "A. The / a: 'Patience' là danh từ trừu tượng nói chung không dùng 'The'.",
+                    "B. Ø / an: Danh từ trừu tượng không dùng mạo từ; 'essential quality' bắt đầu bằng nguyên âm /ɪ/ dùng 'an'.",
+                    "C. A / the: 'Patience' không đếm được nên không dùng 'A'.",
+                    "D. Ø / a: 'essential' bắt đầu bằng nguyên âm /ɪ/ nên dùng 'a' là sai."
+                ],
+                whyCorrect: "Danh từ trừu tượng 'patience' chỉ tính cách chung không dùng mạo từ (Ø). 'essential quality' là cụm danh từ đếm được số ít nhắc lần đầu, bắt đầu bằng nguyên âm /ɪ/ nên dùng 'an'.",
+                whyOthersWrong: "A, C, D thừa mạo từ ở danh từ trừu tượng hoặc chọn sai mạo từ a/an."
+            },
+            {
+                id: 26,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 26: [EMPIRE TEAM] They traveled to _______ Philippines to explore _______ beautiful islands and beaches.",
+                options: ["the / the", "Ø / the", "the / Ø", "Ø / Ø"],
+                correctIndex: 2,
+                translation: "Dịch nghĩa toàn câu: Họ đã du lịch đến Philippines để khám phá những hòn đảo và bãi biển tuyệt đẹp.",
+                optionsBreakdown: [
+                    "A. the / the: 'islands and beaches' nói chung không cần mạo từ 'the'.",
+                    "B. Ø / the: Tên quốc gia quần đảo 'Philippines' bắt buộc phải có 'the'.",
+                    "C. the / Ø: Quần đảo/quốc gia dạng số nhiều dùng 'the'; danh từ số nhiều chỉ cảnh quan chung dùng Ø.",
+                    "D. Ø / Ø: Thiếu mạo từ 'the' bắt buộc của Philippines."
+                ],
+                whyCorrect: "Tên quốc gia ở dạng số nhiều hoặc quần đảo (the Philippines) bắt buộc dùng 'the'. Danh từ số nhiều 'beautiful islands and beaches' chỉ cảnh quan thiên nhiên chung nên dùng Ø.",
+                whyOthersWrong: "A, B, D sai quy tắc mạo từ của tên nước Philippines hoặc thừa mạo từ 'the'."
+            },
+            {
+                id: 27,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 27: [EMPIRE TEAM] I saw _______ interesting advertisement for _______ new laptop on the internet today.",
+                options: ["a / a", "an / a", "the / the", "an / the"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Hôm nay tôi đã thấy một quảng cáo thú vị về một chiếc máy tính xách tay mới trên mạng internet.",
+                optionsBreakdown: [
+                    "A. a / a: 'interesting' bắt đầu bằng nguyên âm /ɪ/ nên không dùng 'a'.",
+                    "B. an / a: 'interesting' dùng 'an'; 'new laptop' danh từ đếm được số ít nhắc lần đầu dùng 'a'.",
+                    "C. the / the: Cả quảng cáo và chiếc laptop đều mới nhắc tới lần đầu, chưa xác định.",
+                    "D. an / the: Laptop chưa xác định nên không dùng 'the'."
+                ],
+                whyCorrect: "'interesting advertisement' bắt đầu bằng nguyên âm /ɪ/ dùng 'an'. 'new laptop' là danh từ đếm được số ít nhắc lần đầu, bắt đầu bằng phụ âm /n/ dùng 'a'.",
+                whyOthersWrong: "A, C, D sai dạng an/a hoặc dùng mạo từ 'the' cho vật chưa xác định."
+            },
+            {
+                id: 28,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 28: [EMPIRE TEAM] _______ sun rises in _______ east and sets in the west every day.",
+                options: ["A / the", "The / the", "The / Ø", "A / a"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Mặt trời mọc ở phương Đông và lặn ở phương Tây mỗi ngày.",
+                optionsBreakdown: [
+                    "A. A / the: Mặt trời là vật thể độc nhất nên bắt buộc dùng 'The'.",
+                    "B. The / the: Vật thể độc nhất (sun) và phương hướng (east) đều dùng 'The/the'.",
+                    "C. The / Ø: Phương hướng 'east' đi sau giới từ 'in' bắt buộc dùng 'the'.",
+                    "D. A / a: Cả hai danh từ đều mang tính độc nhất/xác định phương hướng."
+                ],
+                whyCorrect: "Vật thể duy nhất trong tự nhiên (sun) dùng 'The'. Các hướng địa lý (east, west) đi sau giới từ chỉ phương hướng luôn dùng 'the'.",
+                whyOthersWrong: "A, C, D vi phạm quy tắc vật thể độc nhất hoặc hướng địa lý."
+            },
+            {
+                id: 29,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 29: [EMPIRE TEAM] He is _______ honest man who always tries to do _______ right thing.",
+                options: ["a / the", "an / the", "an / a", "a / a"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Anh ấy là một người đàn ông trung thực, người luôn cố gắng làm điều đúng đắn.",
+                optionsBreakdown: [
+                    "A. a / the: 'honest' có âm 'h' câm, bắt đầu bằng nguyên âm /ɒ/ nên không dùng 'a'.",
+                    "B. an / the: 'honest' dùng 'an'; cụm 'do the right thing' dùng 'the'.",
+                    "C. an / a: Cụm từ cố định 'do the right thing' không dùng 'a'.",
+                    "D. a / a: 'honest' câm 'h' nên dùng 'a' là sai ngữ pháp."
+                ],
+                whyCorrect: "Tính từ 'honest' có âm 'h' câm (phát âm là /ˈɒn.ɪst/) nên đứng trước dùng 'an'. Cụm từ cố định về chuẩn mực đạo đức là 'do the right thing'.",
+                whyOthersWrong: "A, C, D sai quy tắc âm câm của 'honest' hoặc sai cụm từ cố định."
+            },
+            {
+                id: 30,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 30: [EMPIRE TEAM] _______ life would be very different without _______ modern technology we use today.",
+                options: ["Ø / the", "The / the", "A / a", "The / Ø"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Cuộc sống sẽ rất khác biệt nếu không có công nghệ hiện đại mà chúng ta sử dụng ngày nay.",
+                optionsBreakdown: [
+                    "A. Ø / the: 'life' khái niệm chung dùng Ø; 'technology' được xác định bởi mệnh đề 'we use today' dùng 'the'.",
+                    "B. The / the: 'life' nói chung không dùng 'The'.",
+                    "C. A / a: 'life' khái niệm chung không dùng 'A'.",
+                    "D. The / Ø: 'technology' đã được xác định cụ thể bởi 'we use today' nên phải có 'the'."
+                ],
+                whyCorrect: "Danh từ 'life' chỉ cuộc sống nói chung không dùng mạo từ (Ø). 'modern technology' được xác định cụ thể nhờ mệnh đề bổ nghĩa 'we use today' nên phải dùng 'the'.",
+                whyOthersWrong: "B, C, D thừa mạo từ ở danh từ chỉ chung hoặc thiếu mạo từ ở danh từ đã xác định."
+            },
+            {
+                id: 31,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 31: [EMPIRE TEAM] We are going to _______ dinner at _______ expensive restaurant to celebrate her promotion.",
+                options: ["Ø / an", "the / a", "a / an", "the / the"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Chúng tôi sẽ đi ăn tối tại một nhà hàng đắt đỏ để ăn mừng sự thăng tiến của cô ấy.",
+                optionsBreakdown: [
+                    "A. Ø / an: Tên bữa ăn chung dùng Ø; nhà hàng đếm được nhắc lần đầu bắt đầu bằng nguyên âm dùng 'an'.",
+                    "B. the / a: Bữa ăn 'dinner' nói chung không dùng 'the'.",
+                    "C. a / an: Bữa ăn 'dinner' không đi với mạo từ 'a'.",
+                    "D. the / the: Nhà hàng chưa xác định từ trước nên không dùng 'the'."
+                ],
+                whyCorrect: "Tên các bữa ăn trong ngày (dinner) khi không có tính từ đi kèm thì không dùng mạo từ (Ø). 'expensive restaurant' là danh từ đếm được số ít nhắc lần đầu, bắt đầu bằng nguyên âm /ɪ/ dùng 'an'.",
+                whyOthersWrong: "B, C, D thêm mạo từ trước tên bữa ăn hoặc dùng mạo từ xác định sai."
+            },
+            {
+                id: 32,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 32: [EMPIRE TEAM] _______ knowledge is power, but it must be applied in _______ correct way to be useful.",
+                options: ["The / the", "Ø / the", "Ø / a", "The / a"],
+                correctIndex: 2,
+                translation: "Dịch nghĩa toàn câu: Kiến thức là sức mạnh, nhưng nó phải được áp dụng theo một cách đúng đắn thì mới có ích.",
+                optionsBreakdown: [
+                    "A. The / the: 'Knowledge' là danh từ không đếm được chỉ khái niệm chung không dùng 'The'.",
+                    "B. Ø / the: 'in a correct way' dùng 'a' để chỉ một trong những phương cách.",
+                    "C. Ø / a: 'knowledge' khái niệm chung dùng Ø; 'in a correct way' chỉ một cách thức cụ thể nhắc lần đầu.",
+                    "D. The / a: 'Knowledge' khái niệm danh ngôn chung không dùng 'The'."
+                ],
+                whyCorrect: "Danh từ không đếm được 'knowledge' chỉ tri thức chung không dùng mạo từ (Ø). Cụm 'in a correct way' diễn tả việc áp dụng theo một phương cách đúng đắn.",
+                whyOthersWrong: "A, B, D dùng sai mạo từ trước danh từ khái niệm chung 'knowledge'."
+            },
+            {
+                id: 33,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 33: [EMPIRE TEAM] She bought _______ new pair of _______ shoes for the wedding ceremony next week.",
+                options: ["a / Ø", "the / the", "a / the", "the / Ø"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Cô ấy đã mua một đôi giày mới cho lễ cưới vào tuần tới.",
+                optionsBreakdown: [
+                    "A. a / Ø: 'a new pair of' lượng từ đếm được số ít; 'shoes' danh từ số nhiều đứng sau 'pair of' dùng Ø.",
+                    "B. the / the: Đôi giày mua mới nhắc lần đầu không dùng 'the'.",
+                    "C. a / the: 'shoes' đứng sau 'a pair of' không thêm 'the'.",
+                    "D. the / Ø: Đôi giày mới mua nhắc lần đầu chưa xác định nên dùng 'a'."
+                ],
+                whyCorrect: "Cụm danh từ đếm được số ít chỉ đơn vị 'a new pair of'. Danh từ số nhiều 'shoes' đứng sau cụm 'a pair of' mang nghĩa chung nên không thêm mạo từ (Ø).",
+                whyOthersWrong: "B, C, D thừa mạo từ xác định 'the' cho vật mới được đề cập."
+            },
+            {
+                id: 34,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 34: [EMPIRE TEAM] _______ United Nations is _______ international organization founded in 1945.",
+                options: ["Ø / the", "The / an", "A / a", "The / a"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Liên Hợp Quốc là một tổ chức quốc tế được thành lập vào năm 1945.",
+                optionsBreakdown: [
+                    "A. Ø / the: Tên tổ chức Liên Hợp Quốc bắt buộc dùng 'The'.",
+                    "B. The / an: Tên tổ chức 'The United Nations' và danh từ định nghĩa bắt đầu bằng nguyên âm dùng 'an'.",
+                    "C. A / a: Tên riêng Liên Hợp Quốc không dùng 'A'.",
+                    "D. The / a: 'international' bắt đầu bằng nguyên âm /ɪ/ nên dùng 'a' là sai."
+                ],
+                whyCorrect: "Tên tổ chức quốc tế chứa từ 'United' (The United Nations) dùng 'The'. 'international organization' là danh từ đếm được số ít chỉ bản chất, bắt đầu bằng nguyên âm /ɪ/ dùng 'an'.",
+                whyOthersWrong: "A, C, D sai quy tắc mạo từ tên tổ chức hoặc chọn sai an/a."
+            },
+            {
+                id: 35,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 35: [EMPIRE TEAM] He decided to learn _______ Japanese because he wants to work in _______ Tokyo.",
+                options: ["Ø / Ø", "the / the", "a / Ø", "the / a"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Anh ấy quyết định học tiếng Nhật vì anh ấy muốn làm việc tại Tokyo.",
+                optionsBreakdown: [
+                    "A. Ø / Ø: Tên ngôn ngữ và tên thành phố đều không dùng mạo từ.",
+                    "B. the / the: Tên ngôn ngữ đứng sau 'learn' và tên thành phố 'Tokyo' không dùng 'the'.",
+                    "C. a / Ø: Ngôn ngữ không dùng mạo từ 'a'.",
+                    "D. the / a: Cả ngôn ngữ và thành phố đều không dùng mạo từ."
+                ],
+                whyCorrect: "Tên ngôn ngữ đứng độc lập sau động từ học (learn Japanese) không dùng mạo từ (Ø). Tên các thành phố (Tokyo) không dùng mạo từ (Ø).",
+                whyOthersWrong: "B, C, D vi phạm quy tắc mạo từ đối với ngôn ngữ và tên thành phố."
+            },
+            {
+                id: 36,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 36: [EMPIRE TEAM] _______ government is planning to build _______ new bridge across the river to reduce traffic.",
+                options: ["A / a", "The / a", "The / the", "Ø / a"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Chính phủ đang lên kế hoạch xây dựng một cây cầu mới bắc qua sông để giảm tải giao thông.",
+                optionsBreakdown: [
+                    "A. A / a: 'Government' chỉ cơ quan nhà nước xác định của quốc gia nên dùng 'The'.",
+                    "B. The / a: Dùng 'The' cho chính phủ xác định và 'a' cho cây cầu mới xây nhắc lần đầu.",
+                    "C. The / the: Cây cầu mới chưa được xây dựng, nhắc tới lần đầu nên không dùng 'the'.",
+                    "D. Ø / a: 'Government' bắt buộc phải có mạo từ."
+                ],
+                whyCorrect: "'The government' chỉ cơ quan chính quyền quốc gia xác định. 'new bridge' là công trình đếm được số ít nhắc đến lần đầu, bắt đầu bằng phụ âm /n/ dùng 'a'.",
+                whyOthersWrong: "A, C, D dùng sai mạo từ cho chính phủ hoặc cây cầu chưa xác định."
+            },
+            {
+                id: 37,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 37: [EMPIRE TEAM] It was _______ cold day, so we decided to stay at _______ home and watch a movie.",
+                options: ["a / Ø", "the / the", "a / the", "the / Ø"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Hôm đó là một ngày lạnh giá, vì vậy chúng tôi quyết định ở nhà và xem một bộ phim.",
+                optionsBreakdown: [
+                    "A. a / Ø: Dùng 'a' trước ngày thời tiết cụ thể bất kỳ và thành ngữ 'at home' dùng Ø.",
+                    "B. the / the: Ngày thời tiết mô tả chung không dùng 'the'; 'at home' không có 'the'.",
+                    "C. a / the: Cụm 'at home' không dùng 'at the home' trong ngữ cảnh này.",
+                    "D. the / Ø: Ngày thời tiết đơn lẻ mô tả chung dùng 'a'."
+                ],
+                whyCorrect: "'a cold day' miêu tả một ngày thời tiết bất kỳ. Thành ngữ cố định chỉ việc ở nhà là 'at home' (không dùng mạo từ).",
+                whyOthersWrong: "B, C, D sai thành ngữ cố định 'at home' hoặc dùng sai mạo từ chỉ thời tiết."
+            },
+            {
+                id: 38,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 38: [EMPIRE TEAM] _______ moon orbits _______ earth once every 27.3 days.",
+                options: ["A / the", "The / the", "The / Ø", "A / a"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Mặt trăng quay quanh trái đất 27,3 ngày một lần.",
+                optionsBreakdown: [
+                    "A. A / the: 'moon' là hành tinh/vệ tinh duy nhất của Trái đất nên dùng 'The'.",
+                    "B. The / the: Cả mặt trăng (moon) và trái đất (earth) đều là vật thể tự nhiên duy nhất.",
+                    "C. The / Ø: 'earth' chỉ hành tinh Trái đất phải có mạo từ 'the'.",
+                    "D. A / a: Vật thể duy nhất không dùng mạo từ 'A/a'."
+                ],
+                whyCorrect: "Quy tắc mạo từ đối với các thiên thể độc nhất trong vũ trụ: 'the moon' (mặt trăng) và 'the earth' (trái đất) đều bắt buộc dùng 'The/the'.",
+                whyOthersWrong: "A, C, D vi phạm quy tắc vật thể độc nhất trong tự nhiên."
+            },
+            {
+                id: 39,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 39: [EMPIRE TEAM] He gave me _______ useful piece of advice that helped me solve _______ problem quickly.",
+                options: ["a / the", "the / a", "a / a", "Ø / the"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Anh ấy đã cho tôi một lời khuyên hữu ích giúp tôi giải quyết vấn đề đó một cách nhanh chóng.",
+                optionsBreakdown: [
+                    "A. a / the: 'useful' bắt đầu bằng bán nguyên âm /j/ nên dùng 'a'; vấn đề cần giải quyết đã xác định dùng 'the'.",
+                    "B. the / a: 'useful piece' chưa xác định không dùng 'the'.",
+                    "C. a / a: 'problem' là vấn đề cụ thể mà người nói đang gặp phải nên dùng 'the'.",
+                    "D. Ø / the: 'piece' là danh từ đếm được số ít nên bắt buộc phải có mạo từ 'a'."
+                ],
+                whyCorrect: "Từ 'useful' phiên âm là /ˈjuːs.fəl/ (bắt đầu bằng phụ âm /j/) nên dùng 'a'. 'problem' là vấn đề cụ thể được nhắc tới trong hoàn cảnh đó nên dùng 'the'.",
+                whyOthersWrong: "B, C, D nhầm lẫn âm đầu của 'useful' hoặc dùng sai tính xác định của 'problem'."
+            },
+            {
+                id: 40,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 40: [EMPIRE TEAM] _______ computers have changed _______ way we work and communicate with each other.",
+                options: ["The / the", "Ø / the", "Ø / a", "The / a"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Máy tính đã thay đổi cách chúng ta làm việc và giao tiếp với nhau.",
+                optionsBreakdown: [
+                    "A. The / the: 'Computers' là danh từ số nhiều nói chung không dùng 'The'.",
+                    "B. Ø / the: Danh từ số nhiều chỉ phương tiện chung dùng Ø; 'way' có mệnh đề xác định đi kèm dùng 'the'.",
+                    "C. Ø / a: 'way' đã được xác định bởi 'we work...' nên không dùng 'a'.",
+                    "D. The / a: Cả hai vị trí đều sử dụng sai quy tắc xác định."
+                ],
+                whyCorrect: "Danh từ số nhiều 'computers' chỉ chủng loại thiết bị nói chung không dùng mạo từ (Ø). Danh từ 'way' được xác định bởi mệnh đề 'we work and communicate' nên dùng 'the'.",
+                whyOthersWrong: "A, C, D thừa mạo từ ở danh từ chung hoặc thiếu mạo từ ở danh từ đã xác định."
+            },
+            {
+                id: 41,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 41: [EMPIRE TEAM] He is _______ only person who knows _______ secret to his success.",
+                options: ["a / the", "an / a", "the / the", "the / a"],
+                correctIndex: 2,
+                translation: "Dịch nghĩa toàn câu: Anh ấy là người duy nhất biết được bí mật dẫn đến thành công của mình.",
+                optionsBreakdown: [
+                    "A. a / the: Đứng trước từ duy nhất 'only' bắt buộc dùng 'the'.",
+                    "B. an / a: 'only' đi với người duy nhất bắt buộc dùng 'the'.",
+                    "C. the / the: Dùng 'the' trước 'only' và 'the' trước 'secret' được xác định bởi 'to his success'.",
+                    "D. the / a: Bí mật đã được xác định rõ là 'bí mật thành công của anh ấy' nên không dùng 'a'."
+                ],
+                whyCorrect: "Cụm 'the only person' dùng 'the' để nhấn mạnh sự duy nhất. 'secret' được xác định bởi cụm 'to his success' nên cũng phải dùng 'the'.",
+                whyOthersWrong: "A, B, D sai quy tắc duy nhất 'the only' hoặc dùng sai mạo từ không xác định 'a'."
+            },
+            {
+                id: 42,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 42: [EMPIRE TEAM] We visited _______ British Museum during our trip to _______ London last summer.",
+                options: ["the / Ø", "Ø / Ø", "a / the", "the / the"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Chúng tôi đã ghé thăm Bảo tàng Anh trong chuyến đi đến Luân Đôn vào mùa hè năm ngoái.",
+                optionsBreakdown: [
+                    "A. the / Ø: Tên bảo tàng dùng 'the'; tên thành phố (London) không dùng mạo từ.",
+                    "B. Ø / Ø: Bảo tàng nổi tiếng (British Museum) bắt buộc phải có 'the'.",
+                    "C. a / the: Bảo tàng cụ thể không dùng 'a'; tên thành phố không dùng 'the'.",
+                    "D. the / the: Tên thành phố 'London' không dùng mạo từ 'the'."
+                ],
+                whyCorrect: "Tên các bảo tàng (the British Museum) luôn đi với mạo từ 'the'. Tên các thành phố (London) không dùng mạo từ (Ø).",
+                whyOthersWrong: "B, C, D thiếu mạo từ ở tên bảo tàng hoặc thừa mạo từ ở tên thành phố."
+            },
+            {
+                id: 43,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 43: [EMPIRE TEAM] _______ air is essential for _______ all living creatures on this planet.",
+                options: ["The / the", "Ø / Ø", "Ø / the", "The / Ø"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Không khí là điều thiết yếu đối với tất cả sinh vật sống trên hành tinh này.",
+                optionsBreakdown: [
+                    "A. The / the: Không khí nói chung không dùng 'The'.",
+                    "B. Ø / Ø: Danh từ chất khí không đếm được chỉ bản chất chung và cụm 'all living creatures' dùng Ø.",
+                    "C. Ø / the: 'all living creatures' chỉ muôn loài nói chung không dùng 'the'.",
+                    "D. The / Ø: 'air' khái niệm tự nhiên chung không dùng 'The'."
+                ],
+                whyCorrect: "Danh từ không đếm được 'air' chỉ nguyên tố tự nhiên chung không dùng mạo từ (Ø). Cụm 'all living creatures' chỉ tất cả sinh vật nói chung nên không thêm 'the' (Ø).",
+                whyOthersWrong: "A, C, D thừa mạo từ xác định cho các yếu tố tự nhiên và đối tượng chung."
+            },
+            {
+                id: 44,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 44: [EMPIRE TEAM] She is _______ intern at _______ law firm in the city center.",
+                options: ["an / a", "a / a", "an / the", "a / the"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Cô ấy là một thực tập sinh tại một công ty luật ở trung tâm thành phố.",
+                optionsBreakdown: [
+                    "A. an / a: 'intern' bắt đầu bằng nguyên âm /ɪ/ dùng 'an'; 'law firm' danh từ đếm được số ít nhắc lần đầu dùng 'a'.",
+                    "B. a / a: 'intern' bắt đầu bằng nguyên âm nên không dùng 'a'.",
+                    "C. an / the: Công ty luật nhắc lần đầu chưa xác định cụ thể nên không dùng 'the'.",
+                    "D. a / the: Dùng sai mạo từ ở cả hai khoảng trống."
+                ],
+                whyCorrect: "Danh từ chỉ vị trí/nghề nghiệp 'intern' bắt đầu bằng nguyên âm /ɪ/ dùng 'an'. Danh từ đếm được số ít 'law firm' nhắc lần đầu, bắt đầu bằng phụ âm /l/ dùng 'a'.",
+                whyOthersWrong: "B, C, D nhầm lẫn mạo từ an/a hoặc dùng mạo từ xác định khi đối tượng chưa rõ."
+            },
+            {
+                id: 45,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 45: [EMPIRE TEAM] _______ bravery he showed during the rescue was _______ inspiration to everyone.",
+                options: ["Ø / an", "The / an", "A / the", "The / the"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Dũng khí mà anh ấy thể hiện trong cuộc giải cứu là một nguồn cảm hứng cho tất cả mọi người.",
+                optionsBreakdown: [
+                    "A. Ø / an: 'bravery' đã được xác định bởi mệnh đề 'he showed...' nên phải có 'The'.",
+                    "B. The / an: Dùng 'The' cho danh từ có mệnh đề xác định và 'an' trước danh từ đếm được bắt đầu bằng nguyên âm /ɪ/.",
+                    "C. A / the: 'bravery' không đếm được nên không dùng 'A'.",
+                    "D. The / the: 'inspiration' ở đây là một nguồn cảm hứng chung, không dùng 'the'."
+                ],
+                whyCorrect: "Danh từ trừu tượng 'bravery' được xác định bởi mệnh đề quan hệ 'he showed during the rescue' nên dùng 'The'. 'inspiration' là danh từ đếm được số ít nhắc đến với nghĩa 'một nguồn cảm hứng', bắt đầu bằng nguyên âm /ɪ/ nên dùng 'an'.",
+                whyOthersWrong: "A, C, D thiếu mạo từ xác định 'The' hoặc dùng sai mạo từ 'the' cho nguồn cảm hứng."
+            },
+            {
+                id: 46,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 46: [EMPIRE TEAM] We need to find _______ more sustainable way to manage _______ natural resources.",
+                options: ["a / Ø", "the / the", "a / the", "the / Ø"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Chúng ta cần tìm một phương cách bền vững hơn để quản lý tài nguyên thiên nhiên.",
+                optionsBreakdown: [
+                    "A. a / Ø: 'way' danh từ đếm được số ít nhắc lần đầu dùng 'a'; 'natural resources' danh từ số nhiều nói chung dùng Ø.",
+                    "B. the / the: Phương cách chưa xác định không dùng 'the'.",
+                    "C. a / the: 'natural resources' tài nguyên thiên nhiên chung không dùng 'the'.",
+                    "D. the / Ø: Phương cách tìm kiếm mới nhắc lần đầu không dùng 'the'."
+                ],
+                whyCorrect: "'more sustainable way' là danh từ đếm được số ít nhắc đến lần đầu mang tính đề xuất dùng 'a'. 'natural resources' là danh từ số nhiều chỉ nguồn tài nguyên chung nên dùng Ø.",
+                whyOthersWrong: "B, C, D dùng mạo từ 'the' cho các đối tượng chưa xác định hoặc khái niệm chung."
+            },
+            {
+                id: 47,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 47: [EMPIRE TEAM] _______ goal of this project is to improve _______ efficiency of our production line.",
+                options: ["Ø / the", "The / the", "The / Ø", "A / the"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Mục tiêu của dự án này là cải thiện hiệu suất của dây chuyền sản xuất của chúng tôi.",
+                optionsBreakdown: [
+                    "A. Ø / the: 'goal' được xác định bởi 'of this project' nên bắt buộc phải có 'The'.",
+                    "B. The / the: Cả hai danh từ đều được xác định bởi cụm 'of...' phía sau.",
+                    "C. The / Ø: 'efficiency' được xác định bởi 'of our production line' nên bắt buộc có 'the'.",
+                    "D. A / the: Mục tiêu duy nhất của dự án xác định không dùng 'A'."
+                ],
+                whyCorrect: "Danh từ 'goal' được xác định rõ bởi cụm 'of this project' dùng 'The'. Danh từ 'efficiency' được xác định rõ bởi cụm 'of our production line' dùng 'the'.",
+                whyOthersWrong: "A, C, D thiếu mạo từ xác định cho các danh từ đã được giới hạn nghĩa bởi cụm giới từ."
+            },
+            {
+                id: 48,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 48: [EMPIRE TEAM] He plays _______ tennis every weekend at _______ local sports club.",
+                options: ["Ø / the", "the / the", "Ø / a", "the / a"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Anh ấy chơi quần vợt vào mỗi cuối tuần tại câu lạc bộ thể thao địa phương.",
+                optionsBreakdown: [
+                    "A. Ø / the: Môn thể thao không dùng mạo từ; câu lạc bộ địa phương nơi anh ấy tập luyện dùng 'the'.",
+                    "B. the / the: Môn thể thao đi với động từ 'play' không dùng 'the'.",
+                    "C. Ø / a: Câu lạc bộ thể thao địa phương cụ thể nơi anh đến mỗi tuần dùng 'the'.",
+                    "D. the / a: Sai mạo từ ở cả hai vị trí."
+                ],
+                whyCorrect: "Quy tắc: Động từ 'play' + tên môn thể thao (play tennis) không dùng mạo từ (Ø). Câu lạc bộ thể thao địa phương (local sports club) là địa điểm cụ thể quen thuộc anh ấy đến hàng tuần nên dùng 'the'.",
+                whyOthersWrong: "B, C, D vi phạm quy tắc mạo từ trước tên môn thể thao hoặc tính xác định của địa điểm."
+            },
+            {
+                id: 49,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 49: [EMPIRE TEAM] _______ richness of the culture in this region is _______ major attraction for tourists.",
+                options: ["The / a", "Ø / a", "The / the", "A / the"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Sự phong phú của văn hóa ở vùng này là một điểm thu hút lớn đối với du khách.",
+                optionsBreakdown: [
+                    "A. The / a: 'richness' được xác định bởi 'of the culture' dùng 'The'; 'major attraction' điểm thu hút chung dùng 'a'.",
+                    "B. Ø / a: 'richness' có cụm bổ nghĩa 'of...' phía sau nên không thể dùng Ø.",
+                    "C. The / the: 'major attraction' là một trong nhiều điểm thu hút, chưa xác định duy nhất nên không dùng 'the'.",
+                    "D. A / the: 'richness' đã xác định rõ không dùng 'A'."
+                ],
+                whyCorrect: "Danh từ 'richness' được xác định bởi cụm 'of the culture in this region' nên dùng 'The'. 'major attraction' là danh từ đếm được số ít nhắc đến như một điểm thu hút nói chung nên dùng 'a'.",
+                whyOthersWrong: "B, C, D nhầm lẫn tính xác định của danh từ đứng trước cụm 'of' hoặc danh từ đếm được số ít."
+            },
+            {
+                id: 50,
+                instruction: "ARTICLES (Mạo từ)",
+                text: "Question 50: [EMPIRE TEAM] _______ Taj Mahal is _______ UNESCO World Heritage Site located in India.",
+                options: ["Ø / a", "The / a", "The / the", "Ø / the"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Đền Taj Mahal là một Di sản Thế giới được UNESCO công nhận nằm ở Ấn Độ.",
+                optionsBreakdown: [
+                    "A. Ø / a: Công trình kiến trúc/kỳ quan nổi tiếng thế giới bắt buộc dùng 'The'.",
+                    "B. The / a: Công trình kỳ quan dùng 'The'; 'UNESCO' phát âm bắt đầu bằng phụ âm /j/ nên dùng 'a'.",
+                    "C. The / the: Di sản thế giới được giới thiệu là 'một trong các di sản' nên không dùng 'the'.",
+                    "D. Ø / the: Sai ở cả hai vị trí mạo từ."
+                ],
+                whyCorrect: "Tên các công trình kiến trúc/kỳ quan lịch sử nổi tiếng (Taj Mahal) luôn dùng 'The'. Từ 'UNESCO' có phiên âm là /juːˈnes.koʊ/ (bắt đầu bằng bán nguyên âm /j/) nên đứng trước danh từ này dùng mạo từ 'a'.",
+                whyOthersWrong: "A, C, D thiếu mạo từ 'The' trước kỳ quan thế giới hoặc nhầm lẫn nguyên âm/phụ âm của từ UNESCO."
+            }
+        ];
+
+        // Web Audio Synth
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        let audioCtx;
+
+        function initAudio() {
+            if (!audioCtx) {
+                audioCtx = new AudioContext();
+            }
+        }
+
+        function playDingSound() {
+            initAudio();
+            if (audioCtx.state === 'suspended') {
+                audioCtx.resume();
+            }
+            const now = audioCtx.currentTime;
+            const osc1 = audioCtx.createOscillator();
+            const osc2 = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+
+            osc1.type = 'sine';
+            osc2.type = 'triangle';
+
+            osc1.frequency.setValueAtTime(523.25, now);
+            osc1.frequency.exponentialRampToValueAtTime(1046.50, now + 0.15);
+
+            osc2.frequency.setValueAtTime(659.25, now);
+            osc2.frequency.exponentialRampToValueAtTime(1318.51, now + 0.15);
+
+            gain.gain.setValueAtTime(0.3, now);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + 0.4);
+
+            osc1.connect(gain);
+            osc2.connect(gain);
+            gain.connect(audioCtx.destination);
+
+            osc1.start(now);
+            osc2.start(now);
+            osc1.stop(now + 0.4);
+            osc2.stop(now + 0.4);
+        }
+
+        function playWrongSound() {
+            initAudio();
+            if (audioCtx.state === 'suspended') {
+                audioCtx.resume();
+            }
+            const now = audioCtx.currentTime;
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+
+            osc.type = 'sawtooth';
+            osc.frequency.setValueAtTime(180, now);
+            osc.frequency.linearRampToValueAtTime(110, now + 0.3);
+
+            gain.gain.setValueAtTime(0.3, now);
+            gain.gain.exponentialRampToValueAtTime(0.01, now + 0.35);
+
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+
+            osc.start(now);
+            osc.stop(now + 0.35);
+        }
+
+        function launchConfetti() {
+            const canvas = document.getElementById('confetti-canvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            const pieces = [];
+            const numberOfPieces = 100;
+            const colors = ['#f44336', '#e91e63', '#9c27b0', '#673ab7', '#00D26A', '#2196f3', '#03a9f4', '#ffeb3b', '#ff9800'];
+
+            for (let i = 0; i < numberOfPieces; i++) {
+                pieces.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height - canvas.height,
+                    rotation: Math.random() * 360,
+                    size: Math.random() * 10 + 6,
+                    color: colors[Math.floor(Math.random() * colors.length)],
+                    speed: Math.random() * 3 + 2,
+                    oscSpeed: Math.random() * 0.05 + 0.02,
+                    oscStep: Math.random() * Math.PI
+                });
+            }
+
+            let frames = 0;
+            function update() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                pieces.forEach(p => {
+                    p.y += p.speed;
+                    p.oscStep += p.oscSpeed;
+                    p.x += Math.sin(p.oscStep) * 2;
+                    p.rotation += 2;
+
+                    ctx.save();
+                    ctx.translate(p.x, p.y);
+                    ctx.rotate((p.rotation * Math.PI) / 180);
+                    ctx.fillStyle = p.color;
+                    ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size);
+                    ctx.restore();
+                });
+
+                frames++;
+                if (frames < 120) {
+                    requestAnimationFrame(update);
+                } else {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                }
+            }
+            update();
+        }
+
+        function shuffleArray(array) {
+            const arr = [...array];
+            for (let i = arr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+            return arr;
+        }
+
+        const userAnswers = {};
+
+        function renderQuiz() {
+            const container = document.getElementById('quiz-container');
+            container.innerHTML = '';
+
+            rawQuizData.forEach((q) => {
+                const optionsObj = q.options.map((opt, origIdx) => ({
+                    text: opt,
+                    originalIndex: origIdx
+                }));
+                const shuffledOptions = shuffleArray(optionsObj);
+
+                const card = document.createElement('div');
+                card.className = 'question-card';
+                card.id = `q-card-${q.id}`;
+
+                let optionsHTML = '';
+                shuffledOptions.forEach((optObj, btnIdx) => {
+                    const letter = String.fromCharCode(65 + btnIdx);
+                    optionsHTML += `
+                        <button class="option-btn" 
+                                id="btn-${q.id}-${optObj.originalIndex}" 
+                                onclick="handleSelect(${q.id}, ${optObj.originalIndex}, ${q.correctIndex})">
+                            <strong style="margin-right:8px; min-width:24px;">${letter}.</strong> ${optObj.text}
+                        </button>
+                    `;
+                });
+
+                let breakdownHTML = q.optionsBreakdown.map(item => `<div class="option-breakdown-item">• ${item}</div>`).join('');
+
+                card.innerHTML = `
+                    <div class="question-header">
+                        <span class="question-number">Câu ${q.id}</span>
+                        <span class="question-instruction">${q.instruction}</span>
+                    </div>
+                    <div class="question-text">${q.text}</div>
+                    <div class="options-grid">
+                        ${optionsHTML}
+                    </div>
+                    
+                    <div class="explanation-box" id="exp-${q.id}">
+                        <div class="explanation-title">💡 GIẢI THÍCH CHI TIẾT TỪ MS LÊ HẰNG ENGLISH</div>
+                        
+                        <div class="exp-section">
+                            <div class="exp-section-title">1. Dịch nghĩa toàn câu:</div>
+                            <p style="color:#2D3748; font-weight:700;">${q.translation}</p>
+                        </div>
+
+                        <div class="exp-section">
+                            <div class="exp-section-title">2. Phân tích ngữ pháp / từ vựng cả 4 đáp án:</div>
+                            <div class="options-breakdown-list">${breakdownHTML}</div>
+                        </div>
+
+                        <div class="exp-section">
+                            <div class="exp-section-title">3. Tại sao đáp án đúng lại đúng?</div>
+                            <p style="color:#276749; font-weight:800;">${q.whyCorrect}</p>
+                        </div>
+
+                        <div class="exp-section">
+                            <div class="exp-section-title">4. Tại sao các đáp án còn lại sai?</div>
+                            <p style="color:#C53030; font-weight:800;">${q.whyOthersWrong}</p>
+                        </div>
+                    </div>
+                `;
+
+                container.appendChild(card);
+            });
+        }
+
+        function handleSelect(questionId, selectedIdx, correctIdx) {
+            if (userAnswers[questionId] !== undefined) return;
+
+            userAnswers[questionId] = selectedIdx;
+
+            const card = document.getElementById(`q-card-${questionId}`);
+            const selectedBtn = document.getElementById(`btn-${questionId}-${selectedIdx}`);
+            const correctBtn = document.getElementById(`btn-${questionId}-${correctIdx}`);
+            const expBox = document.getElementById(`exp-${questionId}`);
+
+            const allBtns = card.querySelectorAll('.option-btn');
+            allBtns.forEach(btn => btn.disabled = true);
+
+            if (selectedIdx === correctIdx) {
+                selectedBtn.classList.add('correct');
+                playDingSound();
+                launchConfetti();
+            } else {
+                selectedBtn.classList.add('wrong');
+                correctBtn.classList.add('correct');
+                card.classList.add('shake');
+                playWrongSound();
+            }
+
+            expBox.style.display = 'block';
+        }
+
+        function submitQuiz() {
+            let score = 0;
+            const total = rawQuizData.length;
+
+            rawQuizData.forEach(q => {
+                if (userAnswers[q.id] === q.correctIndex) {
+                    score++;
+                }
+            });
+
+            const percentage = (score / total) * 100;
+            let feedback = "";
+
+            if (percentage < 50) {
+                feedback = "“Điểm lần này chưa cao lắm, con cố gắng đọc kỹ giải thích đáp án và làm lại nha. Cô tin con sẽ làm tốt hơn ở lần sau!”";
+            } else if (percentage >= 60 && percentage <= 80) {
+                feedback = "“Con đã có tiến bộ khá ổn rồi, con cố gắng đọc kỹ giải thích đáp án và làm lại nha. Cô tin con sẽ làm tốt hơn ở lần sau!”";
+            } else {
+                feedback = "“Làm tốt lắm, con cố gắng rinh điểm 10 ở lần sau nha!”";
+            }
+
+            document.getElementById('scoreDisplay').innerText = `${score} / ${total}`;
+            document.getElementById('feedbackDisplay').innerText = feedback;
+            document.getElementById('scoreModal').style.display = 'flex';
+
+            if (percentage >= 80) {
+                launchConfetti();
+            }
+        }
+
+        function closeModal() {
+            document.getElementById('scoreModal').style.display = 'none';
+        }
+
+        window.onload = () => {
+            renderQuiz();
+        };
+    </script>
+</body>
+</html>
